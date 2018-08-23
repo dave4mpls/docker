@@ -2,7 +2,8 @@
 ### Candidate: Dave White, dave 4 mpls [at] gmail [dot] com, 612-695-3289
 ### Position: Guest Reliability Engineer
 
-Live Demo is at: [http://myloadbalancer-1065778686.us-east-2.elb.amazonaws.com/](http://myloadbalancer-1065778686.us-east-2.elb.amazonaws.com/)
+Live Demo is at: [http://myloadbalancer-1065778686.us-east-2.elb.amazonaws.com/](http://myloadbalancer-1065778686.us-east-2.elb.amazonaws.com/).
+
 Individual Instances are at [http://52.15.45.185:8000](http://52.15.45.185:8000) and [http://18.221.89.11:8000](http://18.221.89.11:8000).
 
 Since I didn't have knowledge of containerization and Docker during the interview, I decided to learn about it today.  Therefore, this is a good example of my independent learning process: yesterday the only thing containerization brought to mind was ships delivering large metal boxes across the Pacific Ocean, and today I have a load-balanced Docker swarm running on two virtual machines inside of Amazon Web Services EC2 (my knowledge of AWS EC2 yesterday was "I've heard of it").  The swarm includes multiple webserver instances that are all linked to the same database within the swarm.  (The next step for scalability might be to scale up the database, either by using AWS's built-in MySQL compatible scalable database, or by creating additional MySQL instances that are linked to the master one in a replication scheme.)
